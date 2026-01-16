@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Regalo di nozze</title>
 
-  <!-- Fonts very close to wedding invitation -->
+  <!-- Font stile partecipazione -->
   <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --ink: #ffffff;
-      --shadow: rgba(0,0,0,0.35);
+      --green: #6f8f7a; /* verde salvia */
     }
 
     html, body {
@@ -22,7 +21,7 @@
     body {
       display: grid;
       place-items: center;
-      background: #111;
+      background: #f8f7f3;
       font-family: "Libre Baskerville", serif;
     }
 
@@ -30,7 +29,6 @@
       width: min(520px, 100vw);
       aspect-ratio: 2 / 3;
       background: url("sfondo_fiori.png") center/cover no-repeat;
-      position: relative;
     }
 
     .content {
@@ -48,31 +46,28 @@
       font-family: "Italianno", cursive;
       font-size: clamp(46px, 9vw, 68px);
       font-weight: 400;
-      color: var(--ink);
-      text-shadow: 0 2px 0 var(--shadow);
+      color: var(--green);
       margin: 0;
     }
 
     .subtitle {
       font-size: clamp(15px, 3.4vw, 21px);
-      line-height: 1.4;
-      color: var(--ink);
-      text-shadow: 0 2px 0 var(--shadow);
+      line-height: 1.45;
+      color: var(--green);
       max-width: 36ch;
     }
 
     .divider {
       width: 60%;
       height: 1.5px;
-      background: var(--ink);
-      opacity: 0.85;
+      background: var(--green);
+      opacity: 0.9;
     }
 
     .iban {
       font-size: clamp(15px, 3.2vw, 21px);
       letter-spacing: 0.04em;
-      color: var(--ink);
-      text-shadow: 0 2px 0 var(--shadow);
+      color: var(--green);
       word-break: break-word;
       user-select: all;
       max-width: 40ch;
@@ -86,20 +81,19 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
       background: transparent;
-      border: 2px solid var(--ink);
-      color: var(--ink);
+      border: 2px solid var(--green);
+      color: var(--green);
       cursor: pointer;
     }
 
     button:hover {
-      background: rgba(255,255,255,0.15);
+      background: rgba(111,143,122,0.12);
     }
 
     .hint {
       min-height: 1.2em;
       font-size: 13px;
-      color: var(--ink);
-      text-shadow: 0 1px 0 var(--shadow);
+      color: var(--green);
     }
   </style>
 </head>
